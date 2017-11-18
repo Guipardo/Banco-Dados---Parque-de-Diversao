@@ -1,10 +1,3 @@
-insert into sexo (codSexo,nomeSexo) values (1,"M");
-insert into sexo (codSexo,nomeSexo) values (2,"F");
-insert into sexo (codSexo,nomeSexo) values (3,"T");
-insert into sexo (codSexo,nomeSexo) values (4,"O");
-insert into sexo (codSexo,nomeSexo) values (5,"B");	
-
-
 insert into responsavel(codResponsavel,nomeResponsavel) values (50,"Davy Jones");
 insert into responsavel(codResponsavel,nomeResponsavel) values (51,"Leon");
 insert into responsavel(codResponsavel,nomeResponsavel) values (52,"Jéssica");
@@ -31,16 +24,22 @@ insert into criancausabrinquedo(codCrianca,codbrinquedo,ticket) values (33,23,11
 insert into criancausabrinquedo(codCrianca,codbrinquedo,ticket) values (34,22,114);
 insert into criancausabrinquedo(codCrianca,codbrinquedo,ticket) values (35,21,115);
 
-insert into funcionario(codFuncionario,codSexo,codbrinquedo,nomeFuncionario) values (11,1,21,"Carlos");	
-insert into funcionario(codFuncionario,codSexo,codbrinquedo,nomeFuncionario) values (12,2,22,"Helena");	
-insert into funcionario(codFuncionario,codSexo,codbrinquedo,nomeFuncionario) values (13,3,22,"Paula");	
-insert into funcionario(codFuncionario,codSexo,codbrinquedo,nomeFuncionario) values (14,4,24,"Isaias");	
-insert into funcionario(codFuncionario,codSexo,codbrinquedo,nomeFuncionario) values (15,5,25,"Mandy");	
 
+insert into cargo(codCargo,nomeCargo) values (1,"Faxineiro");
+insert into cargo(codCargo,nomeCargo) values (2,"Segurança");
+insert into cargo(codCargo,nomeCargo) values (3,"Supervisor");
+insert into cargo(codCargo,nomeCargo) values (4,"Mecânico");
+insert into cargo(codCargo,nomeCargo) values (5,"Vendedor de Ticket");
 
-select * from sexo;
+insert into funcionario(codFuncionario,codCargo,sexo,codbrinquedo,nomeFuncionario) values (11,1,"M",21,"Carlos");	
+insert into funcionario(codFuncionario,codCargo,sexo,codbrinquedo,nomeFuncionario) values (12,2,"F",22,"Helena");	
+insert into funcionario(codFuncionario,codCargo,sexo,codbrinquedo,nomeFuncionario) values (13,3,"F",22,"Paula");	
+insert into funcionario(codFuncionario,codCargo,sexo,codbrinquedo,nomeFuncionario) values (14,4,"M",24,"Isaias");	
+insert into funcionario(codFuncionario,codCargo,sexo,codbrinquedo,nomeFuncionario) values (15,5,"F",25,"Mandy");
+
+select * from responsavel;
 select * from brinquedo;
 select * from crianca;
-select * from funcionario;
-select * from responsavel;
 select * from criancausabrinquedo;
+select * from cargo;
+select * from funcionario;
