@@ -1,0 +1,5 @@
+delete from  responsavel where id = 53 ;
+delete from  brinquedo where id =  23;
+delete from  Crianca where id = 35  ;
+delete from  cargo where id = 2 ;
+delete from  funcionário where id = 12 ;

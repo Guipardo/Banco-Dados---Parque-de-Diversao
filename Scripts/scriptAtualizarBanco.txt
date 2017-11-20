@@ -1,0 +1,16 @@
+updade responsavel set nomeResponsavel= "Leona" where codResponsavel = 51;
+
+updade brinquedo set nomeBrinquedo= "Toboaga" where codbrinquedo = 24;
+updade brinquedo set capacidade= 21 where codbrinquedo = 25;
+
+updade crianca set codResponsavel= 52 where codCrianca = 31;
+updade crianca set nomeCrianca= "Pietro" where codCrianca = 32;
+updade crianca set idadeCrianca= 13 where codCrianca = 33;
+updade crianca set alturaCrianca= 150 where codCrianca = 34;
+
+updade cargo set nomeCargo="Segurança" where codCargo = 5;
+
+updade funcionario set codCargo= 5 where codFuncionario = 11;
+updade funcionario set codbrinquedo= 4 where codFuncionario = 13;
+updade funcionario set nomeFuncionario= "Isaia" where codFuncionario = 14;
+updade funcionario set sexo= "M" where codFuncionario = 15;

@@ -1,0 +1,6 @@
+drop table criancaUsaBrinquedo;
+drop table Crianca;
+drop table responsavel;
+drop table funcionario;
+drop table brinquedo;
+drop table cargo;
